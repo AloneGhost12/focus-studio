@@ -7,23 +7,23 @@ const packages = [
   {
     name: "Basic",
     price: "Starts at ₹12,000",
-    idealFor: "Small weddings or pre-wedding shoots",
+    idealFor: "Best for small weddings and pre-wedding coverage",
     items: ["1-day coverage", "Candid + posed shots", "Online delivery", "1 revision"],
-    cta: "Get Quote",
+    cta: "Check Availability",
     featured: false,
   },
   {
     name: "Premium",
     price: "Starts at ₹22,000",
-    idealFor: "Most couples who want strong coverage and polished edits",
+    idealFor: "Most popular for couples who want full coverage and polished edits",
     items: ["Full-day coverage", "2 photographers", "Highlight film", "Album guidance"],
-    cta: "View Packages",
+    cta: "Check Availability",
     featured: true,
   },
   {
     name: "Elite",
     price: "Starts at ₹35,000",
-    idealFor: "Large weddings and premium storytelling",
+    idealFor: "Ideal for large weddings and premium, multi-day coverage",
     items: ["Multi-day coverage", "Priority editing", "Premium album", "Extra creative direction"],
     cta: "Check Availability",
     featured: false,
@@ -37,13 +37,13 @@ export function PricingPackages() {
         <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-teal-700">Pricing</p>
-            <h3 className="mt-2 font-serif text-3xl text-slate-900 sm:text-4xl">Simple Wedding Packages</h3>
+            <h3 className="mt-2 font-serif text-3xl text-slate-900 sm:text-4xl">Wedding Packages That Are Easy to Compare</h3>
             <p className="mt-3 max-w-2xl text-slate-700">
-              Clear package names, starting prices, and a fast way to book the right fit.
+              Limited bookings per month. Choose the coverage level that fits your wedding, then check availability before dates fill up.
             </p>
           </div>
           <a href={siteConfig.contact.whatsappUrl} className="inline-flex rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700">
-            Get Quote on WhatsApp
+            Check Availability
           </a>
         </div>
 
@@ -57,7 +57,10 @@ export function PricingPackages() {
               transition={{ duration: 0.35, delay: index * 0.05 }}
               className={`rounded-3xl border p-6 shadow-xl sm:p-7 ${pkg.featured ? "border-slate-900 bg-slate-900 text-white" : "border-white/40 bg-white/75 text-slate-900"}`}
             >
-              <p className={`text-xs font-semibold uppercase tracking-[0.3em] ${pkg.featured ? "text-teal-300" : "text-teal-700"}`}>{pkg.name}</p>
+              <div className="flex items-start justify-between gap-3">
+                <p className={`text-xs font-semibold uppercase tracking-[0.3em] ${pkg.featured ? "text-teal-300" : "text-teal-700"}`}>{pkg.name}</p>
+                {pkg.featured ? <span className="rounded-full bg-teal-500 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white">Most Popular</span> : null}
+              </div>
               <h4 className="mt-2 text-3xl font-bold">{pkg.price}</h4>
               <p className={`mt-2 text-sm ${pkg.featured ? "text-slate-300" : "text-slate-600"}`}>{pkg.idealFor}</p>
 

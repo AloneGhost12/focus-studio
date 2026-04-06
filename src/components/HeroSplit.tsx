@@ -32,11 +32,10 @@ export function HeroSplit() {
             <div className="max-w-xl rounded-2xl border border-[#f4e8d0]/35 bg-[#fff7eb]/20 p-6 backdrop-blur-sm sm:p-7">
               <p className="mb-2 text-xs font-semibold uppercase tracking-[0.35em] text-[#fff1dc]">Wedding Photography in Kozhikode</p>
               <h1 className="font-serif text-4xl leading-tight text-[#fff8eb] sm:text-6xl">
-                Book a Wedding Photographer Who Delivers Clear, Beautiful Results
+                Premium Wedding Photography in Kozhikode That Makes Booking Easy
               </h1>
               <p className="mt-4 max-w-lg text-sm leading-relaxed text-[#fff2df] sm:text-base">
-                Focus Studio covers wedding photography, couple portraits, and full event storytelling in Kozhikode.
-                Check your date, view the work, and book with confidence.
+                Focus Studio helps couples in Kozhikode check availability quickly, choose the right package, and get clean, polished wedding coverage without confusion.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
@@ -61,31 +60,22 @@ export function HeroSplit() {
             className="relative z-10 flex h-full flex-col justify-center"
           >
             <div className="glass-teal max-w-xl rounded-2xl p-6 sm:p-8">
-              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.35em] text-teal-700">Secondary Studio Service</p>
-              <h2 className="text-4xl font-black leading-tight text-slate-900 sm:text-6xl">Printing When You Need It Fast</h2>
+              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.35em] text-teal-700">Wedding Focus</p>
+              <h2 className="text-4xl font-black leading-tight text-slate-900 sm:text-6xl">Limited Dates. Fast Replies. Clear Coverage.</h2>
               <p className="mt-4 text-sm leading-relaxed text-slate-700 sm:text-base">
-                Passport photos, PVC cards, canvas prints, lamination, and urgent studio prints are available as a supporting service.
+                We keep the process simple: check your date, choose a package, and confirm the booking before the schedule fills up.
               </p>
               <div className="mt-8 grid grid-cols-3 gap-3 text-center">
                 {[
-                  ["Fast", "Pickup available"],
-                  ["Clear", "Print quality"],
-                  ["Quick", "Passport photos"],
+                  ["Limited", "Bookings / month"],
+                  ["Fast", "WhatsApp replies"],
+                  ["Focused", "Wedding only"],
                 ].map(([value, label]) => (
                   <div key={label} className="rounded-xl border border-teal-200 bg-white/70 p-3">
                     <p className="text-lg font-extrabold text-teal-700">{value}</p>
                     <p className="text-xs text-slate-600">{label}</p>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-6 flex flex-wrap gap-3">
-                <a href="#packages" className="rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700">
-                  View Packages
-                </a>
-                <a href="#contact" className="rounded-full border border-teal-300 bg-white px-5 py-3 text-sm font-semibold text-teal-900 transition hover:bg-teal-50">
-                  Get Quote
-                </a>
               </div>
             </div>
           </motion.div>

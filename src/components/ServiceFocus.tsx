@@ -43,9 +43,6 @@ export function ServiceFocus() {
             <a href="#portfolio" className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50">
               View Portfolio
             </a>
-            <a href={siteConfig.contact.whatsappUrl} className="rounded-full border border-teal-200 bg-teal-50 px-5 py-3 text-sm font-semibold text-teal-900 transition hover:bg-teal-100">
-              Chat to check your date
-            </a>
           </div>
         </motion.div>
 
@@ -56,18 +53,15 @@ export function ServiceFocus() {
           className="rounded-3xl border border-teal-100 bg-teal-50/80 p-6 shadow-xl lg:col-span-2 sm:p-8"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-teal-700">Secondary Service</p>
-          <h4 className="mt-2 text-2xl font-bold text-slate-900">Printing for Quick Studio Needs</h4>
+          <h4 className="mt-2 text-2xl font-bold text-slate-900">Additional Studio Services</h4>
           <p className="mt-3 text-slate-700">
-            Passport photos, lamination, PVC cards, and urgent prints are available when you need them.
+            Passport photos, lamination, PVC cards, and urgent prints are available on request as a secondary service.
           </p>
 
           <div className="mt-5 rounded-2xl border border-teal-200 bg-white p-4 text-sm text-slate-700">
             {siteConfig.location.street}, {siteConfig.location.city}
           </div>
-
-          <a href="#packages" className="mt-5 inline-flex rounded-full border border-teal-300 bg-white px-5 py-3 text-sm font-semibold text-teal-900 transition hover:bg-teal-100">
-            View Packages
-          </a>
+          <p className="mt-5 text-xs font-semibold uppercase tracking-[0.22em] text-teal-700">Available only as an add-on</p>
         </motion.aside>
       </div>
     </section>

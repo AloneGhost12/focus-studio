@@ -7,9 +7,9 @@ export function CallToActionBand() {
         <div className="grid gap-5 lg:grid-cols-[1.4fr_1fr] lg:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-teal-300">Availability CTA</p>
-            <h3 className="mt-2 font-serif text-3xl leading-tight sm:text-4xl">Check your date and get a fast quote</h3>
+            <h3 className="mt-2 font-serif text-3xl leading-tight sm:text-4xl">Dates fill fast. Check availability now.</h3>
             <p className="mt-3 max-w-2xl text-slate-300">
-              Chat with us to check your date availability, discuss coverage, and choose the package that fits your wedding.
+              Limited bookings per month. Chat with us to confirm your date, review the right package, and lock in your wedding coverage.
             </p>
           </div>
 
