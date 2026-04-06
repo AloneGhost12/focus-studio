@@ -32,7 +32,7 @@ export function StudioMap() {
         <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-lg lg:col-span-2">
           <iframe
             title="Focus Studio Location Map"
-            src="https://maps.google.com/maps?q=Mailavu%20Kozhikode&t=k&z=17&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=11.402958,75.976773&t=k&z=19&ie=UTF8&iwloc=&output=embed"
             className="h-[340px] w-full sm:h-[420px]"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
