@@ -2,7 +2,7 @@ import { siteConfig } from "@/lib/siteConfig";
 
 export function CallToActionBand() {
   return (
-    <section id="availability" className="px-4 py-16 sm:px-6 lg:px-8">
+    <section id="availability" className="px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto w-full max-w-[2200px] rounded-3xl border border-slate-900 bg-slate-900 px-6 py-8 text-white shadow-2xl sm:px-8">
         <div className="grid gap-5 lg:grid-cols-[1.4fr_1fr] lg:items-center">
           <div>

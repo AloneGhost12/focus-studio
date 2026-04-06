@@ -36,13 +36,13 @@ export function PortfolioGallery() {
   }, [active]);
 
   return (
-    <section id="portfolio" className="px-4 py-16 sm:px-6 lg:px-8">
+    <section id="portfolio" className="px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto w-full max-w-[2200px]">
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-teal-700">Portfolio</p>
-            <h3 className="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl">Wedding Stories and Selected Work in Kozhikode</h3>
-            <p className="mt-3 max-w-2xl text-slate-700">
+            <h3 className="mt-2 text-2xl font-bold leading-tight text-slate-900 sm:text-4xl">Wedding Stories and Selected Work in Kozhikode</h3>
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">
               Start with wedding coverage first. Events and print samples stay in secondary tabs if you want to explore more.
             </p>
           </div>

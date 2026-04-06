@@ -32,7 +32,7 @@ const packages = [
 
 export function PricingPackages() {
   return (
-    <section id="packages" className="px-4 py-16 sm:px-6 lg:px-8">
+    <section id="packages" className="px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <div className="mx-auto w-full max-w-[2200px]">
         <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
