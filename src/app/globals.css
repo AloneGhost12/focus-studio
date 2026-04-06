@@ -59,3 +59,28 @@ body {
     transform: translateX(-50%);
   }
 }
+
+.whatsapp-buzz {
+  animation: whatsapp-buzz 2.8s infinite;
+  transform-origin: center;
+}
+
+@keyframes whatsapp-buzz {
+  0%,
+  70%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  74% {
+    transform: translateX(-2px) rotate(-8deg);
+  }
+  78% {
+    transform: translateX(2px) rotate(8deg);
+  }
+  82% {
+    transform: translateX(-2px) rotate(-7deg);
+  }
+  86% {
+    transform: translateX(2px) rotate(7deg);
+  }
+}
