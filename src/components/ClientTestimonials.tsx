@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const testimonials = [
@@ -49,10 +50,12 @@ export function ClientTestimonials() {
               className="rounded-2xl border border-white/40 bg-white/65 p-5 shadow-xl backdrop-blur-lg"
             >
               <div className="mb-4 flex items-center gap-3">
-                <img
+                <Image
                   src={item.image}
                   alt={`${item.name} testimonial portrait`}
-                  loading="lazy"
+                  width={48}
+                  height={48}
+                  unoptimized
                   className="h-12 w-12 rounded-full object-cover"
                 />
                 <div>

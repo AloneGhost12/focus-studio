@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useState } from "react";
 
@@ -75,11 +76,16 @@ export function PortfolioGallery() {
                 transition={{ duration: 0.35 }}
                 className={`group relative overflow-hidden rounded-2xl border border-white/30 shadow-xl ${item.span}`}
               >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                />
+                <div className="absolute inset-0">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    unoptimized
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/65 to-transparent p-4">
                   <p className="text-sm font-semibold text-white">{item.title}</p>
                   <p className="text-xs text-white/80">{item.category}</p>

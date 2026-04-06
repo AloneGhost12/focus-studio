@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   basePath: "/focus-studio",
   assetPrefix: "/focus-studio/",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

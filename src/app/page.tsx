@@ -5,6 +5,7 @@ import { PortfolioGallery } from "@/components/PortfolioGallery";
 import { CallToActionBand } from "@/components/CallToActionBand";
 import { PricingPackages } from "@/components/PricingPackages";
 import { ServiceFocus } from "@/components/ServiceFocus";
+import { MobileStickyCta } from "@/components/MobileStickyCta";
 import { StudioDetails } from "@/components/StudioDetails";
 import { StudioMap } from "@/components/StudioMap";
 import { StudioNavbar } from "@/components/StudioNavbar";
@@ -38,6 +39,7 @@ export default function Home() {
       </footer>
 
       <WhatsAppFloat />
+      <MobileStickyCta />
     </div>
   );
 }
