@@ -10,26 +10,15 @@ Focus Studio is a static Next.js site with no database and no backend API.
 - No API routes
 - Ready for static hosting such as Netlify, Vercel Static, GitHub Pages, or Cloudflare Pages
 
-## Local preview
+## Open the site
 
-You can preview the site locally in two ways:
+To view the finished site without any server, open `out/index.html` directly in your browser.
 
-### Development mode
-
-```bash
-npm run dev
-```
-
-Open http://localhost:3000
-
-### Static preview
+If you want to regenerate the static files after editing, run:
 
 ```bash
 npm run build
-npx serve out -l 4173
 ```
-
-Open http://localhost:4173
 
 ## Deploying as a static site
 
@@ -43,4 +32,4 @@ The homepage lives in `src/app/page.tsx` and the shared site settings live in `s
 
 - There is no database in this project.
 - There are no server routes to configure.
-- If you only want the live static files, use the `out` folder.
+- If you only want the live static files, open `out/index.html` directly.
