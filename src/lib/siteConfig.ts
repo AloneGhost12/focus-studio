@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Focus Studio",
-  domain: "https://aloneghost12.github.io",
+  domain: "https://tridex-code.github.io",
   pathPrefix: "/focus-studio",
   location: {
     street: "Mailavu",
